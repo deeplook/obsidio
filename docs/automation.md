@@ -54,6 +54,18 @@ Current tool areas include:
 - structural queries
 - bookmarks, snippets, and Bases helpers
 
+## Skills
+
+- `vault-doctor`, a maintenance skill that runs `obsidio vault doctor`, `missing-property`, `unresolved-embeds`, `duplicate-titles-aliases`, and `stale-linked`, then turns findings into a prioritized remediation report.
+- `meeting-processor`, a workflow skill that reads a fresh meeting note, extracts tasks/decisions/follow-ups, normalizes frontmatter, updates a project base, and writes sections back into the note with `notes section-write`.
+- `attachment-refactor`, a cleanup skill that finds orphan attachments, duplicate assets, and scattered media, then proposes or performs `attachment-move`, `attachment-rename`, and `attachment-dedupe`.
+- `project-dashboard-builder`, a skill that inspects `.base` files, generates or updates Bases, runs `base-render`, and creates canvases from structural queries with `canvas from-query`.
+- `workspace-curator`, a session-management skill that snapshots workspaces, opens the right tabs for a task, restores saved contexts, and prepares focused panes for writing/review.
+- `research-vault-publisher`, a publishing/export skill that validates a vault, renders specific bases, exports EPUB/HTML/PDF bundles, and packages a shareable artifact.
+- `schema-migrator`, a metadata-governance skill that applies schema files, renames properties, coerces types, normalizes tags, and produces before/after summaries.
+- `agent-memory-bridge`, a Claude skill specifically for AI-assisted work: store tasks, prompts, results, logs, and status in notes; query them later via Bases, structural queries, and MCP tools.
+
+
 ## HTTP Server
 
 The local browser server is also useful for automation. In addition to HTML
